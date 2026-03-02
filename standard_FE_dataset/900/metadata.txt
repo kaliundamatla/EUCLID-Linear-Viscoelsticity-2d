@@ -1,0 +1,37 @@
+Preprocessed Real DIC Data - Experiment 900
+======================================================================
+
+Experiment: PA6_LaserCut_Sanded
+Specimen: PA6 rectangular (laser cut, sanded)
+Test type: Creep test @ 1Hz
+
+Mesh:
+  Source: Forward Solver synthetic_data/700
+  Nodes: 448
+  Elements: 806
+  Dimensions: 24.00 x 65.00 mm
+
+DIC Data:
+  Permanent nodes: 5241
+  Timesteps: 597
+  Time range: [0.000, 596.000] s
+
+Coordinate Alignment:
+  DIC center offset: (-3.12, 0.33) mm
+  Scale factor: 0.9986
+  Mesh offset: (12.00, 32.50) mm
+
+Mapping:
+  Mean distance: 0.206 mm
+  Median distance: 0.216 mm
+  Max distance: 0.429 mm
+
+Boundary Conditions:
+  Bottom nodes (fixed): 14
+  Top nodes (loaded): 14
+  Free nodes: 420
+
+Force:
+  Total force range: [20.49, 259.81] N
+  Number of top nodes: 14
+  Number of bottom nodes: 14

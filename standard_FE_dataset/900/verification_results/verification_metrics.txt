@@ -1,0 +1,20 @@
+Verification Results
+==================================================
+
+Date: 2026-01-24 15:13:09
+Experiment: C:\Users\undamatl\Nextcloud2\EUCLID\euclid-Python_unda\pipeline 3.0\Lin_viscoelastic_identification\synthetic_data\902
+
+Identified Parameters:
+  G_inf = 249.5200 MPa
+  G = [50.68, 14.376] MPa
+  tau_G = [218.5, 599.9] s
+  K_inf = 797.3500 MPa
+  K = [20.89] MPa
+  tau_K = [599.9] s
+
+Error Metrics:
+  RMSE (total): 8.915168e-02 mm
+  RMSE (Ux):    1.024577e-01 mm
+  RMSE (Uy):    7.347418e-02 mm
+  Max Error:    3.255759e-01 mm
+  Relative:     12.28 %

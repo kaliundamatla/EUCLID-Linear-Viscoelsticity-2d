@@ -1,0 +1,18 @@
+Ground Truth Material Parameters
+==================================================
+
+Deviatoric (Shear):
+  G_inf = 1500.0 MPa
+  G = [ 200.  500. 1000.] MPa
+  tau_G = [  5.3  50.1 400.2] s
+  G0 = 3200.0 MPa (instantaneous)
+
+Volumetric (Bulk):
+  K_inf = 2000.0 MPa
+  K = [500. 700. 567.] MPa
+  tau_K = [  5.3  50.1 400.2] s
+  K0 = 3767.0 MPa (instantaneous)
+
+Prony Series:
+  nG = 3
+  nK = 3

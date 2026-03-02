@@ -1,0 +1,68 @@
+======================================================================
+FORWARD SIMULATION - FULL SCALE REPORT
+======================================================================
+
+Generated: 2026-01-26 15:14:02
+
+CONFIGURATION
+----------------------------------------------------------------------
+Mesh:
+  Domain: 20.0mm × 53mm
+  Nodes: 15 × 40 = 600
+  Elements: ~1092 (triangles)
+
+Material (MAT3.5 - MATLAB Reference):
+  Deviatoric:
+    G_inf = 1500.0 MPa
+    G = [ 200.  500. 1000.] MPa
+    tau_G = [  5.3  50.1 400.2] s
+    G0 = 3200.0 MPa
+
+  Volumetric:
+    K_inf = 2000.0 MPa
+    K = [500. 700. 567.] MPa
+    tau_K = [  5.3  50.1 400.2] s
+    K0 = 3767.0 MPa
+
+Time Integration:
+  Time step: dt = 1.0 s
+  Number of steps: 1200
+  Total simulation time: 1200.0 s
+
+Loading:
+  Type: Distributed load on top surface
+  Magnitude: 50.0 MPa
+
+Boundary Conditions:
+  Bottom: v = 0 (all nodes), u = 0 (node 2 only)
+  Top: Loaded
+  Sides: Free
+
+======================================================================
+FILES GENERATED
+======================================================================
+
+Data files (inverse problem format):
+  - coord.csv
+  - conne.txt
+  - U.csv
+  - F.csv
+  - time.csv
+  - ground_truth_material.txt
+
+Visualizations:
+  - mesh.png
+  - displacement_evolution.png
+  - deformed_shapes.png
+  - material_relaxation.png
+
+======================================================================
+USAGE
+======================================================================
+
+To test inverse problem with this synthetic data:
+
+  cd ../inverse_problem
+  python inverse_problem.py --experiment ../Forward_solver/800
+
+Compare identified parameters with ground_truth_material.txt
